@@ -1,0 +1,14 @@
+import random
+def won(user,computer):
+    if(user>computer):
+        print("user won")
+    elif(user<computer):
+        print("user loose")
+    else:
+        won(user = int(input()),computer = random.randint(1,6))
+
+computer = random.randint(1,6)
+print(computer)
+user = int(input())
+won(user,computer)
+        
